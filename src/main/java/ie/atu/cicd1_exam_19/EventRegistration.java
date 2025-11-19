@@ -1,6 +1,7 @@
 package ie.atu.cicd1_exam_19;
 
 
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.*;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @AllArgsConstructor
 @Data
+@Valid
 public class EventRegistration {
     @NotBlank
     String attendeeName;
